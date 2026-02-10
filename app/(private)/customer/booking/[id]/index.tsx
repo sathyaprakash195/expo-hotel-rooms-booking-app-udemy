@@ -9,6 +9,7 @@ import { PRIMARY_COLOR } from "@/constants";
 import { Divider, Icon } from "react-native-paper";
 import dayjs from "dayjs";
 import { getBookingById } from "@/services/bookings";
+import CustomButton from "@/components/custom-button";
 
 const BookingDetailsScreen = () => {
   const params = useLocalSearchParams();
@@ -355,6 +356,8 @@ const BookingDetailsScreen = () => {
                   "credit-card",
                   bookingData.payment_id,
                 )}
+
+              <CustomButton>Cancel Booking</CustomButton>
             </FlexBox>
           </FlexBox>
         )}

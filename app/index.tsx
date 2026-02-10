@@ -24,10 +24,10 @@ export default function Index() {
           router.push(route as RelativePathString);
         }
       } else {
-        router.replace("/(public)/login");
+        router.replace("/(public)/welcome");
       }
     } catch (error) {
-      router.replace("/(public)/login");
+      router.replace("/(public)/welcome");
     }
   };
 
